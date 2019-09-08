@@ -3,7 +3,7 @@
 variable "name" {
   type = string
 
-  default = "bitcoin"
+  default = "parity"
 
   description = <<-DESCRIPTION
     Name of service.
