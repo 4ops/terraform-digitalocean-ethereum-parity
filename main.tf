@@ -40,7 +40,6 @@ resource "null_resource" "update_docker_compose_config" {
   triggers = {
     server_ip_changed             = module.server.ipv4[count.index]
     docker_compose_config_changed = sha256(data.template_file.docker_compose_config.rendered)
-    serial = 1
   }
 
   connection {
