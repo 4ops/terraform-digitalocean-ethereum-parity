@@ -23,7 +23,7 @@ data "template_file" "docker_compose_config" {
           - '--no-ipc'
           - '--no-secretstore'
           - '--interface=all'
-          - '--nat=auto'
+          - '--nat=any'
           - '--allow-ips=all'
           - '--logging=${var.logging}'
           - '--network-id=${var.testnet ? 3 : 1}'
